@@ -1,0 +1,128 @@
+/* Task Manager Styles */
+
+/* Task List Container */
+.wp-task-manager-list {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+/* Filters */
+.task-filters {
+    margin-bottom: 2em;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.task-filters select {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    min-width: 150px;
+}
+
+/* Task Items */
+.task-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.task-title {
+    margin: 0 0 0.5em 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.task-meta {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.task-priority,
+.task-status,
+.task-due-date {
+    padding: 0.25em 0.75em;
+    border-radius: 12px;
+    font-size: 0.9em;
+}
+
+/* Priority Colors */
+.priority-high {
+    background-color: #ffe6e6;
+    color: #cc0000;
+}
+
+.priority-medium {
+    background-color: #fff3e6;
+    color: #cc6600;
+}
+
+.priority-low {
+    background-color: #e6ffe6;
+    color: #006600;
+}
+
+/* Status Colors */
+.status-pending {
+    background-color: #f0f0f0;
+    color: #666;
+}
+
+.status-completed {
+    background-color: #e6ffe6;
+    color: #006600;
+}
+
+.task-description {
+    margin: 1em 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Toggle Status Button */
+.task-toggle-status {
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-toggle-status:hover {
+    background: #005177;
+}
+
+/* No Tasks Message */
+.no-tasks {
+    text-align: center;
+    color: #666;
+    padding: 2em;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .task-meta {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    
+    .task-filters {
+        flex-direction: column;
+    }
+    
+    .task-filters select {
+        width: 100%;
+    }
+}

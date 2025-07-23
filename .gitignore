@@ -1,0 +1,46 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Composer
+/vendor/
+composer.lock
+
+# Node.js
+/node_modules/
+package-lock.json
+
+# WordPress
+*.log
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/mu-plugins/
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Build files
+*.zip
+*.tar.gz
+*.7z
+
+# Test coverage
+coverage/
+phpunit.xml.dist
+.phpunit.result.cache
